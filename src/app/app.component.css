@@ -1,0 +1,212 @@
+
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+.example-card {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.example-header-image {
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.product-card-enhanced {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-enhanced:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.product-image-container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card-enhanced:hover .product-image-container img {
+  transform: scale(1.05);
+}
+
+.product-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  color: #2ecc71;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.product-shipping {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.buy-button {
+  margin-top: auto;
+  width: 100%;
+}
+
+.section-title {
+  text-align: center;
+  margin: 2rem 0;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.product-card h2 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  height: 2.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  
+  -webkit-box-orient: vertical;
+}
+
+.precio {
+  font-size: 1.5rem;
+  color: #a22ecc;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.envio {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.producto-seleccionado {
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destacado {
+  border-left: 5px solid #2ecc71;
+  background-color: #e8f5e9;
+}
+
+.destacado h1 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.destacado span {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #1b5e20;
+}
+
+.precio-info {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.precio-info.precio-alto {
+  font-size: 24px;
+  background-color: #fff3e0;
+  font-weight: bold;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.automotive-products {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  .carousel-image {
+    height: 300px;
+  }
+
+  .product-image-container {
+    height: 220px;
+  }
+}
